@@ -1,9 +1,12 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const hamburgerMenuItems = document.querySelector('.nav-items');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".header__nav-list");
 
-hamburgerMenu.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('open');
-  hamburgerIcon.classList.toggle('open');
-  hamburgerMenuItems.classList.toggle('open');
-});
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".header__nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
