@@ -549,7 +549,7 @@ html {
 
 .testimonial-text {
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   color: #575757;
   font-family: "Poppins", sans-serif;
@@ -558,7 +558,7 @@ html {
 .author-text {
   margin-top: 20px;
   color: #575757;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
