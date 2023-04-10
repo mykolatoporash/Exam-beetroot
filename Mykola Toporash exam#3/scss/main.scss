@@ -703,4 +703,232 @@ html {
 	}
 }
 
+// MENU SECTION
 
+.discounts {
+  &__title{
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto;
+  
+    &_suptext{
+      font-family: $main_font;
+      color: $orange_color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 180%;
+      margin-top: 141px;
+    }
+  
+  }
+}
+
+.dicounts__cards{
+  display: flex;
+  gap: 40px;
+}
+
+
+.dicounts__cards_item {
+  position: relative;
+  max-width: 363px;
+  width: 50%;
+
+  &-title{
+
+    position: absolute;
+    top: 400px;
+    left: 39px;
+    color: white;
+
+    &--name{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 130%;
+    }
+
+    &--price{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 130%;
+    }
+
+
+  }
+  &-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  
+    width: 363px;
+    height: 521px;
+    border-radius: 40px;
+    border: 1px solid #FFF0DA;
+  }
+  
+  &-recipie {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.dicounts__cards_item:hover .dicounts__cards_item-img {
+  opacity: 0.3;
+}
+
+.dicounts__cards_item:hover .dicounts__cards_item-recipie {
+  opacity: 1;
+}
+
+.salad1{
+  background-image: url(../assets/img/salad4.jpeg);
+  background-size: cover;
+  background-position: center; 
+}
+.salad2{
+  background-image: url(../assets/img/salad5.jpeg);
+  background-size: cover;
+  background-position: center; 
+
+}
+.salad3{
+  background-image: url(../assets/img/salad6.jpeg);
+  background-size: cover;
+  background-position: center; 
+}
+
+
+
+
+
+.subscribe{
+  margin-top: 150px;
+  padding-top: 50px;
+
+  background-color: #FFF1DE;
+  background-image: url(../assets/img/bg_subscribe.png);
+  border-radius: 40px;
+  border: 1px solid #FFF0DA;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &_suptitle{
+      font-family: $main_font;
+      color: $orange_color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 180%;
+    }
+
+    &_title{
+      max-width: 655px;
+
+      font-family: $main_font;
+      color: $main_color;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.6rem;
+      line-height: 140%;
+    }
+
+    &_subtitle{
+      max-width: 462px;
+
+      font-family: $main_font;
+      color: $main_color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+    }
+
+
+  }
+
+}
+
+
+
+.banner__searchbar {
+  position: relative;
+  &_input{
+      width: 700px;
+      height: 80px;
+      padding: 10px 8px 10px 31px;;
+      font-family: $main_font;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+
+      border-radius: 100px;
+      border: transparent;
+      
+
+      @media screen and (max-width: 720px) {
+         width: 540px;
+      }
+
+      @media screen and (max-width: 555px) {
+          width: 400px;
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+          padding-left: 15px;
+      }
+
+      @media screen and (max-width: 451px){
+          width: 300px;
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+          padding-left: 7px;
+      }
+  }
+  
+  &_btn{
+      position: absolute;
+      width: 139px;
+      height: 52px;
+      right: 4px;
+      top: 4px;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+
+      @media screen and (max-width: 451px){
+          right: 80px;
+          top: 71px;
+      }
+
+      &-img{
+          padding-right: 10px;
+      }
+
+      &:hover{
+          background-color: #3157ff;
+      }            
+  }   
+}
