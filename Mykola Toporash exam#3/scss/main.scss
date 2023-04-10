@@ -596,19 +596,21 @@ html {
 }
 .testimonial-text {
 	font-weight: 300;
-	font-size: .7rem;
-	line-height: 1rem;
+	font-size: .9rem;
+	line-height: 1.1rem;
 	color: $main_color;
   font-family: $main_font;
+  background-color: #faebd782;
+  padding: 10px;
+  border-radius: 14px;
   
 }
 .author-text {
-	margin-top: 20px;
 	color: $main_color;
-	font-size: .7rem;
+	font-size: .9rem;
 	font-weight: 700;
   font-family: $main_font;
-  
+  margin: 0;
 }
 .author-text span {
 	color: $orange_color;
