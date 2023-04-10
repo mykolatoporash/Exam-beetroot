@@ -815,9 +815,10 @@ html {
 
 
 
-.subscribe{
+.subscribe {
   margin-top: 150px;
   padding-top: 50px;
+  padding-bottom: 100px;
 
   background-color: #FFF1DE;
   background-image: url(../assets/img/bg_subscribe.png);
@@ -855,7 +856,7 @@ html {
     }
 
     &_subtitle{
-      max-width: 462px;
+      max-width: 580px;
 
       font-family: $main_font;
       color: $main_color;
@@ -863,6 +864,8 @@ html {
       font-weight: 500;
       font-size: 16px;
       line-height: 160%;
+
+      margin-top: 30px;
     }
 
 
@@ -874,61 +877,48 @@ html {
 
 .banner__searchbar {
   position: relative;
+ 
+
   &_input{
-      width: 700px;
-      height: 80px;
-      padding: 10px 8px 10px 31px;;
-      font-family: $main_font;
-      font-weight: 400;
-      font-size: 0.9rem;
-      line-height: 20px;
-      letter-spacing: 0.2em;
+    width: 700px;
+    height: 80px;
+    padding: 10px 8px 10px 31px;;
+    font-family: $main_font;
+    color: $main_color;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 140%;
+    letter-spacing: 0.2em;
 
-      border-radius: 100px;
-      border: transparent;
+    border-radius: 100px;
+    border: transparent;
+
+    margin-top: 100px;
+  
       
-
-      @media screen and (max-width: 720px) {
-         width: 540px;
-      }
-
-      @media screen and (max-width: 555px) {
-          width: 400px;
-          font-size: 0.8rem;
-          letter-spacing: 0.1em;
-          padding-left: 15px;
-      }
-
-      @media screen and (max-width: 451px){
-          width: 300px;
-          font-size: 0.8rem;
-          letter-spacing: 0.1em;
-          padding-left: 7px;
-      }
   }
   
   &_btn{
-      position: absolute;
-      width: 139px;
-      height: 52px;
-      right: 4px;
-      top: 4px;
-      font-weight: 400;
-      font-size: 0.9rem;
-      line-height: 20px;
-      letter-spacing: 0.1em;
+    position: absolute;
+    width: 170px;
+    height: 64px;
+    right: 10px;
+    top: 108px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 0.1em;
 
-      @media screen and (max-width: 451px){
-          right: 80px;
-          top: 71px;
-      }
+  
 
-      &-img{
-          padding-right: 10px;
-      }
+    &-img{
+        padding-right: 10px;
+    }
 
-      &:hover{
-          background-color: #3157ff;
-      }            
+    &:hover{
+        background-color: #f39158;
+    }
+               
   }   
 }
+  
