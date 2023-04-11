@@ -838,4 +838,110 @@ html {
 }
 .banner__searchbar_btn:hover {
   background-color: #f39158;
+}
+
+.footer {
+  display: flex;
+  max-width: 1170px;
+  margin: 160px auto;
+  margin-bottom: 20px;
+  gap: 165px;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+.footer__info {
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 160%;
+  max-width: 171px;
+  padding-top: 20px;
+}
+.footer__copyright {
+  padding-top: 50px;
+  color: #575757;
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__nav_title {
+  font-family: "Poppins", sans-serif;
+  color: #FB9333;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+.footer__nav_list {
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+.footer__nav_list-item {
+  padding-top: 21px;
+}
+.footer__nav_list-item--link {
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+.footer__nav_list-item--link:hover {
+  color: #FB9333;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts_title {
+  font-family: "Poppins", sans-serif;
+  color: #FB9333;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+.footer__contacts_item {
+  display: flex;
+  padding-top: 23px;
+  gap: 10px;
+}
+.footer__contacts_item-text {
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: column;
+}
+.footer__icons_nav-menu {
+  display: flex;
+  gap: 15px;
+}
+.footer__icons_text {
+  font-family: "Poppins", sans-serif;
+  color: #575757;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+  padding-top: 15px;
 }/*# sourceMappingURL=main.css.map */

@@ -921,4 +921,127 @@ html {
                
   }   
 }
-  
+
+
+.footer{
+  display: flex;
+
+  max-width: 1170px;
+  margin: 160px auto;
+  margin-bottom: 20px;
+  gap: 165px;
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    font-family: $main_font;
+    color: $main_color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 160%;
+    max-width: 171px;
+    padding-top: 20px;
+  }
+
+  &__copyright{
+    padding-top: 50px;
+    color: $main_color;
+    font-family: $main_font;
+    color: $main_color;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.footer__nav_title{
+  font-family: $main_font;
+  color: $orange_color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 22px;
+}
+
+.footer__nav_list{
+  font-family: $main_font;
+  color: $main_color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 22px;
+
+  &-item{
+    padding-top: 21px;
+
+    &--link{
+      font-family: $main_font;
+      color: $main_color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: .8rem;
+      line-height: 150%;
+
+      &:hover{
+        color: $orange_color;
+      }
+
+    }
+  }
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+  &_title{
+    font-family: $main_font;
+    color: $orange_color;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .8rem;
+    line-height: 22px;
+  }
+
+  &_item{
+    display: flex;
+    padding-top: 23px;
+    gap: 10px;
+
+    &-text{
+      font-family: $main_font;
+      color: $main_color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: .8rem;
+      line-height: 150%;
+    }
+  }
+}
+
+
+.footer__icons{
+  display: flex;
+  flex-direction: column;
+&_nav{
+  &-menu{
+    display: flex;
+    gap: 15px;
+  }
+
+}
+
+&_text{
+  font-family: $main_font;
+  color: $main_color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 150%;
+  padding-top: 15px;
+}
+
+}
+
