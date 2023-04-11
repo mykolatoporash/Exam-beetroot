@@ -1222,6 +1222,14 @@ html {
   }
   .container {
   padding: 16px;
+
+  }
+
+  .containerbg{
+    background: #FFF0DC;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
   }
   span.psw {
   float: right;
@@ -1248,6 +1256,7 @@ html {
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 15px;
   }
   .close {
   position: absolute;
