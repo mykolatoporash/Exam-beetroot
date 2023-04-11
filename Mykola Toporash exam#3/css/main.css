@@ -36,24 +36,8 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-/* */
 .colored_text {
   color: #FB9333;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FB9333;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  border-radius: 100px;
-  border-color: transparent;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: orange;
 }
 
 .bg-gradient {
