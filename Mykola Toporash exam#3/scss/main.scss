@@ -380,7 +380,6 @@ main{
 }
 
 .aboutus__card{
-
   width: 363.33px;
   height: 467.47px;
   background: #FFFFFF;
@@ -727,6 +726,16 @@ html {
 .dicounts__cards{
   display: flex;
   gap: 40px;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    padding-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+  }
 }
 
 
