@@ -52,6 +52,9 @@ h1, h2, h3, h4 {
   border-color: transparent;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: orange;
+}
 
 .bg-gradient {
   background: linear-gradient(to bottom, #FB9333, #FFC17C);
@@ -938,7 +941,7 @@ html {
   padding-right: 10px;
 }
 .banner__searchbar_btn:hover {
-  background-color: #f39158;
+  background-color: orange;
 }
 
 .footer {
@@ -1051,6 +1054,9 @@ html {
 .footer__icons_nav-menu {
   display: flex;
   gap: 15px;
+}
+.footer__icons .icon__scale:hover {
+  transform: scale(1.2);
 }
 .footer__icons_text {
   font-family: "Poppins", sans-serif;

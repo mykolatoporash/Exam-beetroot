@@ -20,6 +20,9 @@
   border-radius: 100px;
   border-color: transparent;
   cursor: pointer;
+  &:hover{
+    background-color: orange;
+  }
 }
 
 .bg-gradient {
@@ -1018,7 +1021,7 @@ html {
       }
 
     &:hover{
-        background-color: #f39158;
+        background-color: orange;
     }
                
   }   
@@ -1148,6 +1151,11 @@ html {
     gap: 15px;
   }
 
+}
+
+.icon__scale:hover {
+ transform: scale(1.2) ;
+  
 }
 
 &_text{
