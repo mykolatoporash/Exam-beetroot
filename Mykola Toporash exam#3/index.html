@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/main.css">
     <title>Jez Salad</title>
 </head>
@@ -28,13 +30,12 @@
             </div>
         </nav>
         <div class="header__sign">
-            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <button type="button" id="login-btn" aria-label="Open login modal">Login</button>
         </div>
-        <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="POST">
+        <div id="login-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+            <form class="modal-content animate" action="#" method="POST">
                 <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
+                    <span class="close" id="modal-close" title="Close Modal" role="button" tabindex="0" aria-label="Close modal">&times;</span>
                 </div>
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
@@ -47,8 +48,7 @@
                     </label>
                 </div>
                 <div class="container containerbg">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Cancel</button>
+                    <button type="button" id="modal-cancel" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
@@ -139,7 +139,7 @@
                                 going to be routine. I recommend this salad to all of you guys! because they really take
                                 care of the quality. ”
                             </p>
-                            <p class="author-text">Mykola Toprash
+                            <p class="author-text">Mykola Toporash
                                 <span>FE Developer</span>
                             </p>
                         </div>
@@ -162,7 +162,7 @@
                             <img src="./assets/img/pp.png" alt="img">
                         </div>
                     </div>
-                    <div class="slide slide-2">
+                    <div class="slide slide-3">
                         <div class="slide-text">
                             <p class="testimonial-text">
                                 “ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ab temporibus ad
@@ -186,59 +186,52 @@
         <section id="menu" class="discounts">
             <div class="discounts__title">
                 <h4 class="discounts__title_suptext">MENU YANG MEMBUATMU JATUH CINTA</h4>
-                <h3 class="dsicounts__title_heading heading">ENJOY THE BEST MENU AND GET
+                <h3 class="discounts__title_heading heading">ENJOY THE BEST MENU AND GET
                     <span class="colored_text"> DISCOUNTS </span> AVAILABLE
                 </h3>
 
             </div>
-            <div class="dicounts__cards">
-                <div class="dicounts__cards_item">
-                    <div class="dicounts__cards_item-img salad1">
-                        <!-- <img src="./assets/img/salad2.png" alt="img" class="image" class="dicounts__cards_item-img--content"> -->
+            <div class="discounts__cards">
+                <div class="discounts__cards_item">
+                    <div class="discounts__cards_item-img salad1"></div>
+                    <div class="discounts__cards_item-title">
+                        <h4 class="discounts__cards_item-title--name">Mini Salad Yummy</h4>
+                        <h4 class="discounts__cards_item-title--price">$ 2.99</h4>
                     </div>
-                    <div class="dicounts__cards_item-title">
-                        <h4 class="dicounts__cards_item-title--name">Mini Salad Yummy </h4>
-                        <h4 class="dicounts__cards_item-title--price">$ 2.99</h4>
-                    </div>
-                    <div class="dicounts__cards_item-recipie">
-                        <h5 class="dicounts__cards_item-recipie--text">-cale</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-apple</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-carrot</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-tomato</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-eggs</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-olive oil</h5>
+                    <div class="discounts__cards_item-recipie">
+                        <h5 class="discounts__cards_item-recipie--text">-cale</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-apple</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-carrot</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-tomato</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-eggs</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-olive oil</h5>
                     </div>
                 </div>
-                <div class="dicounts__cards_item">
-                    <div class="dicounts__cards_item-img salad2">
-                        <!-- <img src="./assets/img/salad2.png" alt="img" class="image" class="dicounts__cards_item-img--content"> -->
+                <div class="discounts__cards_item">
+                    <div class="discounts__cards_item-img salad2"></div>
+                    <div class="discounts__cards_item-title">
+                        <h4 class="discounts__cards_item-title--name">Salad Yummy Red</h4>
+                        <h4 class="discounts__cards_item-title--price">$ 3.99</h4>
                     </div>
-
-                    <div class="dicounts__cards_item-title">
-                        <h4 class="dicounts__cards_item-title--name">Salad Yummy Red </h4>
-                        <h4 class="dicounts__cards_item-title--price">$ 3.99</h4>
-                    </div>
-                    <div class="dicounts__cards_item-recipie">
-                        <h5 class="dicounts__cards_item-recipie--text">-beijing cabbage</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-blue cheese</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-tomato</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-olives</h5>
+                    <div class="discounts__cards_item-recipie">
+                        <h5 class="discounts__cards_item-recipie--text">-beijing cabbage</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-blue cheese</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-tomato</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-olives</h5>
                     </div>
                 </div>
-                <div class="dicounts__cards_item">
-                    <div class="dicounts__cards_item-img salad3">
-                        <!-- <img src="./assets/img/salad2.png" alt="img" class="image" class="dicounts__cards_item-img--content"> -->
+                <div class="discounts__cards_item">
+                    <div class="discounts__cards_item-img salad3"></div>
+                    <div class="discounts__cards_item-title">
+                        <h4 class="discounts__cards_item-title--name">Completed Salad</h4>
+                        <h4 class="discounts__cards_item-title--price">$ 4.99</h4>
                     </div>
-                    <div class="dicounts__cards_item-title">
-                        <h4 class="dicounts__cards_item-title--name">Completed Salad </h4>
-                        <h4 class="dicounts__cards_item-title--price">$ 4.99</h4>
-                    </div>
-                    <div class="dicounts__cards_item-recipie">
-                        <h5 class="dicounts__cards_item-recipie--text">-parmesan</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-beijing cabbage</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-tomato</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-avocado</h5>
-                        <h5 class="dicounts__cards_item-recipie--text">-shrimps</h5>
+                    <div class="discounts__cards_item-recipie">
+                        <h5 class="discounts__cards_item-recipie--text">-parmesan</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-beijing cabbage</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-tomato</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-avocado</h5>
+                        <h5 class="discounts__cards_item-recipie--text">-shrimps</h5>
                     </div>
                 </div>
             </div>
@@ -254,10 +247,9 @@
                 </h3>
             </div>
 
-            <form class="banner__searchbar" action="action_page.php">
-                <input class="banner__searchbar_input" type="text" placeholder="Enter your email address" name="e-mail">
-                <button class="banner__searchbar_btn btn" type="submit"><img src="./assets/img/search_icon.svg" alt=""
-                        class="banner__searchbar_btn-img">Subscribe</button>
+            <form class="banner__searchbar" action="#" method="get">
+                <input class="banner__searchbar_input" type="email" placeholder="Enter your email address" name="email" required autocomplete="email">
+                <button class="banner__searchbar_btn btn" type="submit">Subscribe</button>
             </form>
         </section>
 
@@ -271,7 +263,6 @@
                 healthy fruit salad with
                 high nutrition.
             </h4>
-        </div>
         </div>
         <div class="footer__box">
             <h4 class="footer__nav_title">Feature</h4>
@@ -309,7 +300,7 @@
                 <ul class="footer__icons_nav-menu">
                     <li class="footer__icons_nav-menu--item">
                         <a href="" class="footer__icons_nav-menu--item---link icon_tw">
-                            <svg class="icon__scale" icon__scalewidth="32" height="32" viewBox="0 0 64 64"
+                            <svg class="icon__scale" width="32" height="32" viewBox="0 0 64 64"
                                 fill="#FB9333" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M57.4212 18.9645C57.4619 19.533 57.4619 20.1016 57.4619 20.6701C57.4619 38.0101 44.264 57.9899 20.1421 57.9899C12.7106 57.9899 5.80713 55.8375 0 52.1016C1.05587 52.2234 2.071 52.264 3.1675 52.264C9.29938 52.264 14.9441 50.193 19.4517 46.66C13.6852 46.5381 8.85275 42.7615 7.18775 37.5635C8 37.6853 8.81213 37.7665 9.665 37.7665C10.8426 37.7665 12.0204 37.604 13.1167 37.3199C7.10662 36.1015 2.59888 30.8224 2.59888 24.4468V24.2844C4.345 25.259 6.37563 25.8681 8.52775 25.9493C4.99475 23.5939 2.68012 19.5736 2.68012 15.0254C2.68012 12.5889 3.32975 10.3554 4.46688 8.40613C10.9237 16.3655 20.6294 21.5634 31.5125 22.132C31.3095 21.1574 31.1876 20.1423 31.1876 19.127C31.1876 11.8985 37.0354 6.01025 44.3044 6.01025C48.081 6.01025 51.4921 7.594 53.8881 10.1524C56.8525 9.58388 59.6951 8.48738 62.213 6.98488C61.2383 10.0306 59.1672 12.589 56.4465 14.2133C59.0861 13.9291 61.6445 13.198 63.9997 12.1829C62.2132 14.7818 59.9796 17.0964 57.4212 18.9645Z" />
@@ -345,9 +336,9 @@
 
 
 
-    <script src="./js/burger.js"></script>
-    <script src="./js/carousel.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/modal.js" defer></script>
 
 
 </body>

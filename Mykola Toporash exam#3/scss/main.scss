@@ -736,12 +736,12 @@ html {
   }
 }
 
-.dicounts__cards{
+.discounts__cards {
   display: flex;
   gap: 40px;
 
   @media screen and (max-width: 1200px) {
-    padding-top: 0px;
+    padding-top: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -749,7 +749,7 @@ html {
   }
 }
 
-.dicounts__cards_item {
+.discounts__cards_item {
   position: relative;
   max-width: 363px;
   width: 100%;
