@@ -1,30 +1,23 @@
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-const slides = document.querySelectorAll('.slide');
+(function () {
+  'use strict';
 
-let index = 0;
-display(index);
-function display (index) {
-	slides.forEach((slide) => {
-		slide.style.display = 'none';
-	});
-	slides[index].style.display = 'flex';
-}
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+  const slides = document.querySelectorAll('.slide');
 
-function nextSlide () {
-	index++;
-	if (index > slides.length - 1) {
-		index = 0;
-	}
-	display(index);
-}
-function prevSlide () {
-	index--;
-	if (index < 0) {
-		index = slides.length - 1;
-	}
-	display(index);
-}
+  if (!nextBtn || !prevBtn || !slides.length) return;
 
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    currentIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.style.display = i === currentIndex ? 'flex' : 'none';
+    });
+  }
+
+  nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+  prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+
+  showSlide(0);
+})();
